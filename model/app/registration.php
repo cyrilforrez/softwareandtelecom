@@ -23,5 +23,5 @@ $req->execute(array(
    $connexions = $req -> fetchAll();
    return $connexions;
   }
-  header('Location:controler/app/home.php');
+  header('Location:../../index.php');
 ?>

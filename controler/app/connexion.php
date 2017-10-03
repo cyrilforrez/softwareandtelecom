@@ -7,7 +7,7 @@ include_once('model/connexion_sql.php');
 if (isset($_POST["email"]) and isset($_POST["password"])) {
   $connexions = get_connexion($_POST["email"], $_POST["password"]);
     if (!$connexions) {
-        header('Location:index.php');
+        header('Location:controler/app/home.php');
     } else {
 
         $_SESSION['email'] = $_POST['email'];
